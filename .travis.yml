@@ -26,12 +26,6 @@ addons:
 install:
   - npm install
 
-before_script:
-  - sudo add-apt-repository -y ppa:snappy-dev/snapcraft-daily
-  - sudo apt-get update
-  - sudo apt-get dist-upgrade
-  - sudo apt-get install snapcraft
-
 script:
   - npm run dist
 
