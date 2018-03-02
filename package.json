@@ -69,7 +69,7 @@
       ]
     },
     "snap": {
-      "confirment": "strict",
+      "confinement": "strict",
       "summary": "How I try to make electron app",
       "grade": "stable",
       "buildPackages": [],
