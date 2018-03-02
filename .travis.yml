@@ -4,9 +4,6 @@ sudo: false
 language: node_js
 node_js: "8"
 
-install:
-  - sudo snap install snapcraft --classic
-
 env:
   global:
     - ELECTRON_CAHCE=$HOME/.cache/electron
@@ -28,6 +25,7 @@ addons:
 
 install:
   - npm install
+  - sudo snap install snapcraft --classic
 
 script:
   - npm run dist
