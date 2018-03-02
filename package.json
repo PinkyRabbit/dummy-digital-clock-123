@@ -1,6 +1,6 @@
 {
   "name": "dummy-digital-clock-123",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "How I maked dummy digital clock for Linux when I learning electron",
   "author": "Mikita Melnikau <usesa@yandex.com>",
   "license": "MIT",
