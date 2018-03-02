@@ -1,0 +1,37 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js: "8"
+
+env:
+  global:
+    - ELECTRON_CAHCE=$HOME/.cache/electron
+    - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
+    
+os:
+  - linux
+  
+cache:
+  directories:
+  - node_modules
+  - $HOME/.cache/electron
+  - $HOME/.cache/electron-builder
+  
+addons:
+  apt:
+    packages:
+      -rpm
+
+install:
+  - npm install
+
+script:
+  - npm run dist
+
+before_cache:
+  - rm -rf $HOME/.cache/electron-builder/wine
+  
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"

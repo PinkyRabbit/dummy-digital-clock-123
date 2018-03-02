@@ -1,0 +1,103 @@
+{
+  "name": "dummy-digital-clock-123",
+  "version": "1.0.0",
+  "description": "How I maked dummy digital clock for Linux when I learning electron",
+  "author": "Mikita Melnikau <usesa@yandex.com>",
+  "license": "MIT",
+  "main": "main.js",
+  "homepage": "hack-it-up.ru",
+  "build": {
+    "appId": "com.electron.dummy-digital-clock-123",
+    "productName": "Dummy Digital Clock",
+    "publish": [
+      {
+        "provider": "github",
+        "repo": "dummy-digital-clock-123",
+        "owner": "pinkyrabbit"
+      }
+    ],
+    "linux": {
+      "category": "Utils",
+      "icon": "assets",
+      "packageCategory": "utils",
+      "maintainer": "Mikita Melnikau <usesa@yandex.com>",
+      "target": [
+        "deb",
+        "rpm",
+        "AppImage",
+        "snap"
+      ],
+      "synopsis": "How I try to build electron app for Linux"
+    },
+    "deb": {
+      "publish": [
+        {
+          "provider": "bintray",
+          "package": "dummy-digital-clock-123",
+          "repo": "dummy-digital-clock-123-debian",
+          "user": "pinkyrabbit",
+          "component": "dummy-digital-clock-123"
+        }
+      ],
+      "depends": [
+        "libxss1",
+        "libpq5",
+        "gconf2",
+        "gconf-service",
+        "libnotify4",
+        "libappindicator1",
+        "libxtst6",
+        "libnss3"
+      ]
+    },
+    "rpm": {
+      "publish": [
+        {
+          "provider": "bintray",
+          "package": "dummy-digital-clock-123",
+          "repo": "dummy-digital-clock-123-debian",
+          "user": "pinkyrabbit"
+        }
+      ],
+      "depends": [
+        "nss",
+        "openssl",
+        "GConf2",
+        "libnotify",
+        "libappindicator",
+        "libXtst"
+      ]
+    },
+    "snap": {
+      "confirment": "strict",
+      "summary": "How I try to make electron app",
+      "grade": "stable",
+      "buildPackages": [],
+      "stagePackages": [
+        "libnotify4",
+        "libappindicator1",
+        "libxtst6",
+        "libnss3",
+        "libxss1",
+        "fontconfig-config",
+        "gconf2",
+        "libasound2",
+        "pulseaudio"
+      ],
+      "plugs": [
+        "default",
+        "unity8-calendar"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build --arch all",
+    "postinstall": "install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "^1.8.2",
+    "electron-builder": "^20.2.0"
+  }
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dummy Clock</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      <h1 style="text-align:center;font-size: 4em" id="time">Hello!</h1>
+    <script>
+      const electron = require('electron');
+      electron.ipcRenderer.on('time', (event, time) => {
+        document.getElementById('time').textContent = time;
+      });
+    </script>
+    </body>
+</html>
