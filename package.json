@@ -17,9 +17,9 @@
       }
     ],
     "linux": {
-      "category": "Utils",
+      "category": "Utility",
       "icon": "assets",
-      "packageCategory": "utils",
+      "packageCategory": "Clock",
       "maintainer": "Mikita Melnikau <usesa@yandex.com>",
       "target": [
         "deb",
