@@ -4,8 +4,10 @@ sudo: required
 language: node_js
 node_js: "8"
 
+before_install:
+  - sudo snap install snapcraft --classic
+
 env:
-  - brew install snapcraft
   global:
     - ELECTRON_CAHCE=$HOME/.cache/electron
     - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
@@ -23,7 +25,6 @@ addons:
   apt:
     packages:
       - rpm
-      - snapd
 
 install:
   - npm install
