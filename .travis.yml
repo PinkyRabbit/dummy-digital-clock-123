@@ -27,10 +27,11 @@ install:
   - npm install
 
 before_script:
-  - sudo add-apt-repository -y ppa:snappy-dev/snapcraft-daily
-  - sudo apt-get update
-  - sudo apt-get install snapd
+  - sudo apt-get --yes --no-install-recommends install snapd
+  - sudo snap install lxd
   - sudo snap install snapcraft --classic
+  - sudo /snap/bin/lxd waitready
+  - sudo /snap/bin/lxd init --auto
 
 script:
   - npm run dist
