@@ -58,9 +58,8 @@
           "provider": "bintray",
           "package": "dummy-digital-clock-123",
           "repo": "dummy-digital-clock-123-rpm",
-          "user": "pinkyrabbit",
           "owner": "pinkyrabbit",
-          "component": "dummy-digital-clock-123",
+          "user": "pinkyrabbit",
           "distribution": "stable"
         }
       ],
