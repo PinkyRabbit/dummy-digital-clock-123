@@ -55,7 +55,7 @@
         {
           "provider": "bintray",
           "package": "dummy-digital-clock-123",
-          "repo": "dummy-digital-clock-123-debian",
+          "repo": "dummy-digital-clock-123-rpm",
           "user": "pinkyrabbit"
         }
       ],
