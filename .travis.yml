@@ -1,5 +1,5 @@
 dist: trusty
-sudo: required
+sudo: false
 
 language: node_js
 node_js: "8"
@@ -25,13 +25,6 @@ addons:
 
 install:
   - npm install
-
-before_script:
-  - sudo apt-get --yes --no-install-recommends install snapd
-  - sudo snap install lxd
-  - sudo snap install snapcraft --classic
-  - sudo /snap/bin/lxd waitready
-  - sudo /snap/bin/lxd init --auto
 
 script:
   - npm run dist

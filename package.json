@@ -67,27 +67,6 @@
         "libappindicator",
         "libXtst"
       ]
-    },
-    "snap": {
-      "confinement": "strict",
-      "summary": "How I try to make electron app",
-      "grade": "stable",
-      "buildPackages": [],
-      "stagePackages": [
-        "libnotify4",
-        "libappindicator1",
-        "libxtst6",
-        "libnss3",
-        "libxss1",
-        "fontconfig-config",
-        "gconf2",
-        "libasound2",
-        "pulseaudio"
-      ],
-      "plugs": [
-        "default",
-        "unity8-calendar"
-      ]
     }
   },
   "scripts": {
