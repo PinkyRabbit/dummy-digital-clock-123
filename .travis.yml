@@ -24,8 +24,6 @@ addons:
       - rpm
 
 install:
-  - sudo apt-get --yes --no-install-recommends install snapd
-  - sudo snap install snapcraft --classic
   - npm install
 
 script:
