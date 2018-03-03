@@ -36,7 +36,9 @@
           "package": "dummy-digital-clock-123",
           "repo": "dummy-digital-clock-123-debian",
           "user": "pinkyrabbit",
-          "component": "dummy-digital-clock-123"
+          "owner": "pinkyrabbit",
+          "component": "dummy-digital-clock-123",
+          "distribution": "stable"
         }
       ],
       "depends": [
@@ -56,7 +58,9 @@
           "provider": "bintray",
           "package": "dummy-digital-clock-123",
           "repo": "dummy-digital-clock-123-rpm",
-          "user": "pinkyrabbit"
+          "owner": "pinkyrabbit",
+          "user": "pinkyrabbit",
+          "distribution": "stable"
         }
       ],
       "depends": [
