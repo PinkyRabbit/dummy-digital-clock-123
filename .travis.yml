@@ -24,11 +24,7 @@ addons:
       - rpm
 
 install:
-  - sudo apt-get --yes --no-install-recommends install snapd
-  - sudo snap install lxd
-  - sudo snap install snapcraft --classic
-  - sudo /snap/bin/lxd waitready
-  - sudo /snap/bin/lxd init --auto
+  - snap install snapcraft --classic
   - npm install
 
 script:
