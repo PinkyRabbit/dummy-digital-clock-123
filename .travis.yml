@@ -29,7 +29,7 @@ install:
 before_script:
   - sudo add-apt-repository -y ppa:snappy-dev/snapcraft-daily
   - sudo apt-get update
-  - sudo apt-get install snapcraft
+  - sudo apt-get install snapd
 
 script:
   - npm run dist
